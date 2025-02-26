@@ -160,7 +160,7 @@ float: left;
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
 
-@media (min-width: 600px) and (max-width: 767px){
+@media (min-width: 600px) {
 
 
 header, footer{
@@ -270,11 +270,30 @@ grid-row: 3/4;
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
-img {
+
+@media (max-width: 620px) {
+img{
+display: block;
+width: 500px;
+max-width: 500px;
+} 
+}
+
+@media (min-width: 620px) and (max-width: 1380px) {
+img{
+display: block;
+width: 200px;
+max-width: 200px;
+} 
+}
+
+@media (min-width: 1380px) {
+img{
 display: block;
 width: 300px;
 max-width: 300px;
 } 
+}
 
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
