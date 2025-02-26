@@ -229,7 +229,7 @@ grid-row: 3/5;
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
 
-@media only screen and (min-width: 889px) and (max-width: 1999px){
+@media (min-width: 889px) and (max-width: 1999px){
 
 header, footer{
 background-color: var(--lime-green);
@@ -270,14 +270,12 @@ grid-row: 3/4;
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
-@supports (display: block) {
-
-img{
+img {
+display: block;
 width: 300px;
 max-width: 300px;
 } 
- 
-}
+
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
